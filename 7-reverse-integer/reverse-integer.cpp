@@ -5,7 +5,7 @@ public:
         int rem;
         while(x){
             rem=x%10;
-            if((rev>INT_MAX/10) || (rev<INT_MIN/10)) {return 0;}
+            if(rev>INT_MAX/10 || rev<INT_MIN/10) {return 0;}
             rev=(rev*10)+rem;
             x=x/10;
         }    
